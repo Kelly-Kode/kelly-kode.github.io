@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Modern Agency</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:'Inter',sans-serif;
+  background:#0b0f19;
+  color:#e6e6e6;
+}
+header{
+  position:fixed;
+  width:100%;
+  top:0;
+  display:flex;
+  justify-content:space-between;
+  padding:20px 60px;
+  background:rgba(11,15,25,0.8);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+nav a{
+  margin-left:30px;
+  color:#e6e6e6;
+  text-decoration:none;
+  font-size:14px;
+}
+.hero{
+  height:100vh;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+  padding:0 20px;
+}
+.hero h1{
+  font-size:64px;
+  max-width:900px;
+  line-height:1.1;
+  background:linear-gradient(90deg,#7c3aed,#22d3ee);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.hero p{
+  margin-top:20px;
+  font-size:18px;
+  opacity:0.7;
+}
+.hero button{
+  margin-top:30px;
+  padding:15px 35px;
+  border:none;
+  border-radius:10px;
+  background:linear-gradient(90deg,#7c3aed,#22d3ee);
+  color:white;
+  font-weight:600;
+  cursor:pointer;
+}
+.section{
+  padding:120px 60px;
+}
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+  margin-top:50px;
+}
+.card{
+  background:#111827;
+  padding:40px;
+  border-radius:20px;
+  transition:0.3s;
+}
+.card:hover{
+  transform:translateY(-10px);
+  background:#1f2937;
+}
+.work{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:30px;
+  margin-top:50px;
+}
+.work div{
+  height:200px;
+  border-radius:20px;
+  background:linear-gradient(135deg,#7c3aed,#22d3ee);
+}
+.testimonials{
+  display:flex;
+  gap:20px;
+  overflow:auto;
+  margin-top:50px;
+}
+.testimonial{
+  min-width:300px;
+  background:#111827;
+  padding:30px;
+  border-radius:20px;
+}
+.cta{
+  text-align:center;
+  padding:120px 20px;
+  background:linear-gradient(135deg,#7c3aed,#22d3ee);
+  border-radius:30px;
+  margin:60px;
+}
+footer{
+  padding:60px;
+  text-align:center;
+  opacity:0.6;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h3>Brand</h3>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Services</a>
+    <a href="#">Work</a>
+    <a href="#">Contact</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <h1>Designing the future of digital experiences</h1>
+  <p>We create high-performing websites and brands</p>
+  <button>Get Started</button>
+</section>
+
+<section class="section">
+  <h2>Services</h2>
+  <div class="grid">
+    <div class="card">Web Design</div>
+    <div class="card">Development</div>
+    <div class="card">Branding</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Our Work</h2>
+  <div class="work">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Testimonials</h2>
+  <div class="testimonials">
+    <div class="testimonial">Amazing work!</div>
+    <div class="testimonial">Highly recommend</div>
+    <div class="testimonial">Top quality design</div>
+  </div>
+</section>
+
+<div class="cta">
+  <h2>Let’s build something great</h2>
+  <p>Start your project today</p>
+</div>
+
+<footer>
+  <p>© 2026 Agency</p>
+</footer>
+
+</body>
+</html>
